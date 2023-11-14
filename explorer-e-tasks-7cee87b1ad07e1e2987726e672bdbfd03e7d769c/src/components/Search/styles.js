@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.section`
+  padding: 0 32px;
+`;
+
+export const Filters = styled.div`
+  margin-top: 40px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 24px;
-  padding: 16px 0;
+  gap: 1rem;
+  margin-right: 10px;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_500};
-
-  > h1 {
-    font-size: 32px;
-  }
 `;
